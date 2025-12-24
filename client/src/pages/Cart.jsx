@@ -85,7 +85,7 @@ const Cart = () => {
         }
       }
     } catch (error) {
-      toast.error(error.message);
+      totoast.error(error.response.data.message);
     }
   };
   return products.length > 0 && cartItems ? (
